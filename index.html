@@ -4,62 +4,79 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Define a codificação de caracteres para UTF-8, que suporta caracteres especiais -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Faz com que a página se ajuste corretamente em dispositivos móveis -->
-    <title>Parallelo Arquitetura e Construção</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Define o título da página que aparece na aba do navegador -->
+    <title>Parallelo Arquitetura e Construção</title>
+
+    <!-- importação de conteudo -->
     <link rel="stylesheet" href="csss/style.css">
-    <!-- Adiciona o arquivo de estilo CSS para formatar a página -->
+    <link rel="preconnect" href="https://fonts,googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https;//fonts.googleapis.com/csss?family=Montserrat:ital,wght@0,100..900;1.100..900&display=swap" rel="stylesheet">    
 </head>
 
 <body>
     <nav>
-        <!-- Seção de navegação do site -->
-        <div id="logo">
-            <!-- Contém o logotipo da empresa -->
-            <a href="index.html">
-                <!-- Link para a página inicial -->
-                <img src="imagens\logo-white.png" alt="Logotipo">
-                <!-- Imagem do logotipo -->
-            </a>
-        </div>
-        <div id="main-menu">
-            <!-- Contém o menu principal do site -->
+        <div id="main-menu-geral">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="imagens\logo-white.png">
+                </a>
+            </div>
+            <div id="main-menu">
             <ul>
-                <!-- Lista de itens de menu -->
                 <li>
+                    <span>01.</span>
                     <a href="#">Home</a>
-                    <!-- Link para a página inicial -->
                 </li>
                 <li>
+                    <span>02.</span>
                     <a href="#">Trabalhos</a>
-                    <!-- Link para a seção de trabalhos -->
                 </li>
                 <li>
+                    <span>03.</span>
                     <a href="#">Scaneamento</a>
-                    <!-- Link para a seção de escaneamento -->
                 </li>
                 <li>
+                    <span>04.</span>
                     <a href="#">Sobre</a>
-                    <!-- Link para a página sobre a empresa -->
                 </li>
                 <li>
+                    <span>05.</span>
                     <a href="#">Lançamentos</a>
-                    <!-- Link para a seção de lançamentos -->
                 </li>
                 <li>
+                    <span>06.</span>
                     <a href="#">Contato</a>
-                    <!-- Link para a página de contato -->
                 </li>
             </ul>
         </div>
     </nav>
-
     <header>
         <!-- Cabeçalho da página -->
-        <img src="imagens\project-1.jpg" width="100%" alt="Projeto">
-        <!-- Imagem que ocupa toda a largura do cabeçalho -->
+        <img class="slide" src="imagens\slidebg1.jpg" width="100%">
+         <div id="slide-bar">
+            <div id="txt_slide">
+                Projeto
+            </div>
+            <div id="titulo_slide">
+            <h4>Lean Production</h4>
+        </div>
+            <div class="seta esquerda">
+                <a href="#"></a>
+                    <img src="imagens\arrow-left.png">
+                </a>
+            </div>
+         <div class="seta direita">
+            <a href="#">
+                <img src="imagens\arrow-right.png">
+            </a>
+         </div>
+            
+         </div>
     </header>
+    <div class="separador">
+    </div>
 </body>
 </html>
