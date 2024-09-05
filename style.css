@@ -1,121 +1,134 @@
-body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-nav{
-    margin: 0 auto;
-    position: absolute;
-    top: 15px;
-    width: 100%;
-    min-width: 1080px;
-}
-nav #main-menu-geral{
-    max-width: 1480px;
-    height: 125px;
-    margin: 0 auto;
-    background-color: black;
-}
-nav ul li span{
-    float: left;
-    color: #868686;
-    font-size: 11px;
-    margin: 58px 3px 53px 15px;
-}
-nav ul li a{
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 53px 15px 53px 0;
-    float: left;
-    transition: all 1s;
-}
-nav ul li a:hover{
-    text-decoration: line-through;
-    color: rgb(231, 169, 32);
-    transition: all 1s;
-}
-nav ul li a span{
-    font-size: 11px;
-    color: #868686;
-    margin: 5px 3px 0 0;
-    text-decoration: none;
-}
-nav ul{
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-}
-nav ul li{
-    list-style: none;
-    height: 125px;
-    transition: all 1s;
-}
-nav ul li:hover{
-    background: #444444;
-    transition: all 1s;
-}
-nav #logo img{
-    height: 75px;
-    margin: 25px;
-    float: left;
-}
-nav #main-menu{
-    float: right;
-}
-.montserrat, nav ul li a{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-header{
-    width: 100%;
-    height: 600px;
-}
-header .slide{
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-}
-header #slide-bar{
-    margin-top: 320px;
-    height: 280px;
-    float: left;
-    background-image: url(../imagens/yellow-bg.png);
-    width: 625px;
-    padding: 0 0 0 60px;
+/* Estilos gerais para o corpo da página */
+body {
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
 }
 
-header #txt_slide{
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    margin-top: 50px;
-    color: white;
-    text-transform: uppercase;
+/* Estilos para a barra de navegação */
+nav {
+    margin: 0 auto; /* Centraliza horizontalmente */
+    position: absolute; /* Posiciona de forma absoluta */
+    top: 15px; /* Espaço no topo */
+    width: 100%; /* Largura total */
+    min-width: 1080px; /* Largura mínima */
 }
-header #titulo_slide{
-    font-size: 50px;
-    color: white;
-    font-family: "Montserrat", sans-serif;
+
+/* Estilos para o container do menu */
+nav #main-menu-geral {
+    max-width: 1480px; /* Largura máxima */
+    height: 125px; /* Altura */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    background-color: black; /* Cor de fundo preta */
 }
-header #titulo_slide h4{
-    margin: 30px 0;
+
+/* Estilos para a lista de itens no menu */
+nav ul {
+    display: flex; /* Exibe itens em linha */
+    flex-direction: row; /* Direção horizontal */
+    margin: 0; /* Remove margem */
+    padding: 0; /* Remove preenchimento */
 }
-header .seta{
-    float: left;
+
+/* Estilos para cada item da lista */
+nav ul li {
+    list-style: none; /* Remove marcadores */
+    height: 125px; /* Altura */
+    transition: all 1s; /* Transição suave */
 }
-header .direita{
-    margin-left:  20px;
+
+/* Estilos para links no menu */
+nav ul li a {
+    color: #fff; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 53px 15px; /* Preenchimento */
+    float: left; /* Alinha à esquerda */
+    transition: all 1s; /* Transição suave */
 }
-.separador{
-    width: 100%;
-    height: 300px;
-    background-image: url(../imagens/divider-dark.png);
-    background-repeat: repeat-x;
+
+/* Estilos para links quando o mouse passa sobre eles */
+nav ul li a:hover {
+    text-decoration: line-through; /* Linha através do texto */
+    color: rgb(231, 169, 32); /* Cor do texto */
+}
+
+/* Estilos para o logo */
+nav #logo img {
+    height: 75px; /* Altura da imagem */
+    margin: 25px; /* Margem ao redor */
+    float: left; /* Alinha à esquerda */
+}
+
+/* Estilos para a seção de menu */
+nav #main-menu {
+    float: right; /* Alinha à direita */
+}
+
+/* Estilos para a fonte Montserrat */
+.montserrat, nav ul li a {
+    font-family: "Montserrat", sans-serif; /* Fonte Montserrat */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    width: 100%; /* Largura total */
+    height: 600px; /* Altura */
+}
+
+/* Estilos para a imagem de fundo do cabeçalho */
+header .slide {
+    width: 100%; /* Largura total */
+    height: 600px; /* Altura */
+    object-fit: cover; /* Ajusta a imagem */
+    position: absolute; /* Posiciona de forma absoluta */
+    z-index: -1; /* Coloca atrás de outros elementos */
+}
+
+/* Estilos para a barra de slide */
+header #slide-bar {
+    margin-top: 320px; /* Espaço acima */
+    height: 280px; /* Altura */
+    float: left; /* Alinha à esquerda */
+    background-image: url(../imagens/yellow-bg.png); /* Imagem de fundo */
+    width: 625px; /* Largura */
+    padding: 0 0 0 60px; /* Preenchimento */
+}
+
+/* Estilos para o texto na barra de slide */
+header #txt_slide {
+    font-size: 14px; /* Tamanho da fonte */
+    margin-top: 50px; /* Espaço acima */
+    color: white; /* Cor do texto */
+    text-transform: uppercase; /* Texto em maiúsculas */
+}
+
+/* Estilos para o título na barra de slide */
+header #titulo_slide {
+    font-size: 50px; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+}
+
+/* Estilos para o título dentro da barra de slide */
+header #titulo_slide h4 {
+    margin: 30px 0; /* Margem acima e abaixo */
+}
+
+/* Estilos para as setas de navegação */
+header .seta {
+    float: left; /* Alinha à esquerda */
+}
+
+header .direita {
+    margin-left: 20px; /* Espaço à esquerda */
+}
+
+/* Estilos para o separador */
+.separador {
+    width: 100%; /* Largura total */
+    height: 300px; /* Altura */
+    background-image: url(../imagens/divider-dark.png); /* Imagem de fundo */
+    background-repeat: repeat-x; /* Repete horizontalmente */
 }
